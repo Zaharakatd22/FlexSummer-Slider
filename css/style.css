@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Bad Script", cursive;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.item {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: #aeaeae;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.item:hover {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.item span {
+  font-size: 4rem;
+  text-shadow: 0px opx 10px #000;
+}
+
+.item-1 {
+  background: url(../img/1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.item-2 {
+  background: url(../img/2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.item-3 {
+  background: url(../img/3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.item-4 {
+  background: url(../img/4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@media(max-width: 640px) {
+  .slider {
+    flex-direction: column;
+    height: 100vh;
+    flex-flow: column;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .item:hover {
+    flex-grow: 30%;
+  }
+}
