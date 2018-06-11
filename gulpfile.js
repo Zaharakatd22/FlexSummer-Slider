@@ -19,7 +19,6 @@ var notify         = require("gulp-notify");
 var htmlmin        = require('gulp-htmlmin');
 var rev            = require('gulp-rev');
 var ftp            = require('gulp-ftp');
-var connectPHP     = require('gulp-connect-php');
 gulp.task('serve', ['sass','pug'],  function() {
     browserSync.init({
         server: "src/"
